@@ -1,0 +1,65 @@
+//Style for container
+
+.container {
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px 20px;
+	#header {
+		font-family: 'Josefin Sans', sans-serif;
+		font-style: italic;
+		color: #333333;
+	}
+	#text {
+		font-family: 'Josefin Sans', sans-serif;
+		color: #333333;
+	}
+	#link-item1:hover{
+		background-color: red;
+		padding: 0px 0px;
+	}
+	#link-item2:hover{
+		background-color: orange;
+		padding: 0px 0px;
+	}
+	#link-item3:hover{
+		background-color: yellow;
+		padding: 0px 0px;
+	}
+
+	.link-list {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.list-item {
+		margin: 10px 0px;
+	}
+	.banner {
+		align-self: center;
+	}
+	.information {
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+		width: 100%;
+		height: 100%;
+		.background-container {
+			border-bottom: 1px solid #333333;
+			.background-content {
+				display: flex;
+				justify-content: space-around;
+				margin: 50px 170px;
+				.profile-image {
+					width: 180px;
+					height: 180px;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+}

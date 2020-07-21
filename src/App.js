@@ -1,28 +1,44 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save asd reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+//components 
+import Background from './components/background';
+import Projects from './components/projects/projects';
+import ProgramLang from './components/programLang/programLang';
+//util 
+import { Route, Link, Switch } from 'react-router-dom';
+
+//design
+import './App.scss';
+
+const App = () => {
+	return (
+		<div className="container" class="container">
+			<div className="banner">
+				<h1 className="name" id="header">
+					Developer Minseok Choi
+				</h1>
+			</div>
+			<div className="information">
+				<Background />
+				<hr />
+				<ul className="link-list">
+					<li id="link-item1">
+						<Link to ="/projects" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Projects</h2></Link>
+					</li>
+					<li id="link-item2">
+						<Link id="link-item" to ="/programLang" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Program Languages</h2></Link>
+					</li>
+					<li id="link-item3">
+						<Link id="link-item" to ="/Languages" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Language</h2></Link>
+					</li>
+				</ul>
+			</div>
+			<Switch>
+				<Route exact path="/projects" component={Projects}/>
+				<Route path="/programLang" component={ProgramLang}/>
+			</Switch>
+		</div>
+	);
+};
 
 export default App;
