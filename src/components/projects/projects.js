@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //Components
-import Grip from './grip';
+import Grip from './grip/grip';
 import ProjectCard from './projectCard';
 //util
 import { Route } from 'react-router-dom';
