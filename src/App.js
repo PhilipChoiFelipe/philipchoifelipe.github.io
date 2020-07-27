@@ -29,13 +29,14 @@ const App = () => {
 						<Link id="link-item" to ="/resume/programLang" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Program Languages</h2></Link>
 					</li>
 					<li id="link-item3">
-						<Link id="link-item" to ="/resume/programLang" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Language</h2></Link>
+						<Link id="link-item" to ="/resume/contact" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Contact</h2></Link>
 					</li>
 				</ul>
 			</div>
 			<Switch>
 				<Route exact path="/resume/projects" component={Projects}/>
 				<Route path="/resume/programLang" component={ProgramLang}/>
+				<Route path="/resume/contact" component={ProgramLang}/>
 			</Switch>
 		</div>
 	);

@@ -3,10 +3,10 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 const images = [
-	'/images/gripImages/pullup_api_v1-API flowchart.jpg',
-	'/images/gripImages/pullup_api_v1-Auth flowchart.jpg',
-	'/images/gripImages/pullup_api_v1-Database_ User.jpg',
-	'/images/gripImages/pullup_api_v1-Nav Stack.jpg',
+	process.env.PUBLIC_URL + '/images/gripImages/pullup_api_v1-API flowchart.jpg',
+	process.env.PUBLIC_URL + '/images/gripImages/pullup_api_v1-Auth flowchart.jpg',
+	process.env.PUBLIC_URL + '/images/gripImages/pullup_api_v1-Database_ User.jpg',
+	process.env.PUBLIC_URL + '/images/gripImages/pullup_api_v1-Nav Stack.jpg',
 ];
 
 const Flowchart = () => {

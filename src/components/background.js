@@ -4,7 +4,7 @@ const Background = () => {
 	return (
 		<div className="background-container">
 			<div className="background-content">
-				<img className="profile-image" src="/images/profile" alt="Profile" />
+				<img className="profile-image" src={process.env.PUBLIC_URL + "/profile"} alt="Profile" />
 				<ul>
 					<li id="text" className="list-item">
 						HighSchool: Korea International School

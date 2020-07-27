@@ -4,3 +4,8 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+@font-face {
+  font-family: 'JSDongKang';
+  src: local('JSDongKang'), url(./fonts/JSDongkang-Regular.ttf) format('truetype');
+}
