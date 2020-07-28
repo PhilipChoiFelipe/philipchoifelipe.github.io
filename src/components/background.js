@@ -7,7 +7,7 @@ const Background = () => {
 				<img className="profile-image" src={process.env.PUBLIC_URL + "/profile"} alt="Profile" />
 				<ul>
 					<li id="text" className="list-item">
-						HighSchool: Korea International School
+						High School: Korea International School
 					</li>
 					<li id="text" className="list-item">
 						University: University of Washington, Seattle

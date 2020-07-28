@@ -23,20 +23,20 @@ const App = () => {
 				<hr />
 				<ul className="link-list">
 					<li id="link-item1">
-						<Link to ="/resume/projects" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Projects</h2></Link>
+						<Link to ="/projects" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Projects</h2></Link>
 					</li>
 					<li id="link-item2">
-						<Link id="link-item" to ="/resume/programLang" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Program Languages</h2></Link>
+						<Link id="link-item" to ="/programLang" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Program Languages</h2></Link>
 					</li>
 					<li id="link-item3">
-						<Link id="link-item" to ="/resume/contact" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Contact</h2></Link>
+						<Link id="link-item" to ="/contact" style={{ textDecoration: 'none' }}><h2 className="projects" id="header">Contact</h2></Link>
 					</li>
 				</ul>
 			</div>
 			<Switch>
-				<Route exact path="/resume/projects" component={Projects}/>
-				<Route path="/resume/programLang" component={ProgramLang}/>
-				<Route path="/resume/contact" component={ProgramLang}/>
+				<Route exact path="/projects" component={Projects}/>
+				<Route path="/programLang" component={ProgramLang}/>
+				<Route path="/contact" component={ProgramLang}/>
 			</Switch>
 		</div>
 	);

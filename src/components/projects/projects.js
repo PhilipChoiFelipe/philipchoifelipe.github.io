@@ -39,7 +39,7 @@ const Projects = () => {
 						<p id="korean-text" style={{lineHeight: '10px'}}>[자바 프로그래밍 게임 개발]</p>
 					</div>
 					<GunDown/>
-					<div className="card-footer" class="card-footer bg-transparent">
+					<div className="card-footer" class="card-footer bg-transparent" id="text">
 						Used Tech Stacks (사용기술): Java
 						<div className="two-buttons">
 							<a style={{color: 'white'}} id="text" href="https://github.com/PhilipChoiFelipe/GunDown" class="btn btn-dark" target="_blank"  rel="noopener noreferrer">
